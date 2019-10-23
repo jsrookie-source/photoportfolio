@@ -1,0 +1,45 @@
+.contact {
+    height: 100%;
+    padding-top: 20vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:
+        linear-gradient(to right, rgba($primary, 0.8), rgba($primary, 0.2)),
+
+        url('/shoot/DSC_0241.jpg') center top;
+    background-size: cover;
+
+    h2 {
+        font-size: 3rem;
+        margin: 2rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align:left;
+    }
+
+    &__val {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        font-size: 1.5 rem;
+    }
+
+    .social-icons{
+        display:flex;
+        flex-direction: row;
+        position: initial;
+        margin-top:1rem;
+    }
+
+     footer{
+        transform:
+        rotate(0deg)
+        translate(0.8rem, -5rem);
+        display:block;
+        flex-direction: row;
+        position: initial;
+        margin-top:12rem; 
+    }
+}

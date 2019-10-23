@@ -1,0 +1,75 @@
+.about {
+    padding-bottom: 2rem;
+
+
+    &__bio-image{
+        height:50vh;
+        width:100%;
+        background:
+        linear-gradient(to right, rgba($primary, 0.8), rgba($primary, 0.2)),
+
+        url('/shoot/DSC_0231.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    p{
+
+        margin-bottom: 1rem;
+
+    }
+    }
+&__bio{
+    width: 80%;
+    text-align: center;
+    .text-secondary{
+        padding-bottom: 1rem;
+    }
+}
+.jobs {
+width:60vw;
+margin:2rem auto 0 auto;
+display:grid;
+grid-template-columns: 1fr;
+grid-gap:2rem;
+
+&__job{
+    background: lighten($primary,20%) ;
+    padding:0.5rem;
+    border-bottom:5px solid $secondary;
+
+    h2,h3{
+        margin:0.5rem 0;
+    }
+    h6{
+        margin:0.3rem 0;
+        text-align: center;
+        font-size: 1rem;
+        font-weight:600;
+        font-family: 'Times New Roman', Times, serif;
+        // border-bottom: 2px solid $secondary ;
+        padding:1px;
+        &::after{
+         content:'';
+         display:block;
+         margin:0 auto;
+         width:90%; 
+         border-bottom: 2px solid $secondary; 
+        }
+    }
+}
+
+}
+.social-icons {
+
+    display: flex;
+    flex-direction: column;
+
+}
+footer{
+    transform:
+    rotate(90deg)
+    translate(-4rem, -4rem);
+}
+}

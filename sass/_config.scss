@@ -1,0 +1,46 @@
+$primary:rgb(0, 0, 0);
+$secondary:rgb(255, 154, 1);
+$force:white;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+@mixin transition-slow {
+    transition: all 1.1s ease-in-out;
+}
+
+@function set-text-color($color) {
+    @if(lightness($color) > 40%) {
+        @return black;
+    }
+
+    @else {
+        @return white;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 760px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}

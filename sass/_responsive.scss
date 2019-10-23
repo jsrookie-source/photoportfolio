@@ -1,0 +1,105 @@
+@include media-md{
+.menu-btn{
+    visibility:hidden;
+}
+
+.nav{
+
+    visibility:visible;
+   background-color:rgb(70, 70, 70);
+   opacity:0.95;
+    .menu-nav{
+        display:block;
+    
+        transform:translateY(0);
+        height: 100%;
+        background: transparent;
+        text-align:center;
+        margin:1.5rem;
+
+        &__item{
+            display:inline;
+            padding-right:1.5rem;
+        }
+        &__link{
+           
+            display:inline;
+            font-size:1.5rem;
+        }
+    }
+         
+}
+ .about__bio{
+
+    font-size:1.3rem;
+ }
+ .projects {
+
+    &__bio-image {
+        height:73vh;
+        background:
+        linear-gradient(to right, rgba($primary, 0.8), rgba($primary, 0.2)),
+
+        url('/shoot/DSC_0324.JPG');
+    background-size: cover;
+        .text-secondary{
+            font-size: 3rem;
+        }
+    }
+    #{&}__items {
+        
+       grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+ .contact__val{
+     grid-template-columns: repeat(2,1fr);
+ }
+}
+
+@include media-lg {
+.home{
+    padding-top: 30vh;
+    background:
+    linear-gradient(to right, rgba($primary, 0.8), rgba($primary, 0.2)),
+
+    url('/shoot/DSC_0338.JPG') center top;
+background-size: cover;
+}
+    .projects{
+        #{&}__items {
+            
+           grid-template-columns: repeat(3, 1fr);
+        }
+}
+.contact{
+    padding-top:50vh;
+    background:
+        linear-gradient(to right, rgba($primary, 0.8), rgba($primary, 0.2)),
+
+        url('/shoot/DSC_0324.JPG');
+    background-size: cover; 
+}
+// footer{
+     
+//         transform:
+//         rotate(0deg)
+//         translate(0.8rem, -5rem);
+//         display:block;
+//         flex-direction: row;
+//         position: initial;
+//         margin-top:0.5px; 
+    
+// }
+.contact__val{
+    
+    grid-template-columns: repeat(3,1fr);
+}
+}
+
+@include media-xl {
+.projects__bio-image{
+    height:70vh;
+}
+
+}
