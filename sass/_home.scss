@@ -7,21 +7,23 @@
     background:
         linear-gradient(to right, rgba($primary, 0.8), rgba($primary, 0.2)),
 
-        url("/shoot/DSC_0241.jpg") center top;
+        url('/shoot/DSC_0241.jpg') center top;
     background-size: cover;
-    &__name{
-        font-size:3rem;
+
+    &__name {
+        font-size: 3rem;
         padding-bottom: 0.2rem;
         margin-bottom: 0.3rem;
-        border-bottom:3px solid set-text-color($primary);
+        border-bottom: 3px solid set-text-color($primary);
 
-        &--last{
-            color:$secondary;
+        &--last {
+            color: $secondary;
             font-weight: 600;
         }
     }
-    footer{
+
+    footer {
         transform:
-        translate(-1rem, -0.5rem);
+            translate(-1rem, -0.5rem);
     }
 }
