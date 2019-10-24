@@ -8,7 +8,7 @@
         background:
             linear-gradient(to right, rgba($primary, 0.8), rgba($primary, 0.2)),
 
-            url('/shoot/DSC_0231.jpg');
+            url('/shoot/backie.jpeg');
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -23,36 +23,47 @@
 
         }
     }
+
     #{&}__items {
         width: 60vw;
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 1rem;
-    
+
     }
 }
 
-.projects__btns{
+.projects__btns {
 
     position: absolute;
-    top:0;
-    height:100%;
-    width:100%;
-    z-index:1;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
-    text-align:center;
-
+    text-align: center;
+p{
+    position: absolute;
+    top: 0.5%;
+    // height: 10%;
+    background-color: $primary;
+    width: 100%;
+    text-align: center;
+    
+}
 
 }
-.projects__btn{
-    opacity:0;
-    color:set-text-color($primary);
+
+.projects__btn {
+    opacity: 0;
+    color: set-text-color($primary);
     @include transition-ease;
-    &:hover{
-        color:set-text-color($secondary);
+
+    &:hover {
+        color: set-text-color($secondary);
     }
 }
 
@@ -61,7 +72,7 @@
     border-bottom: 5px solid $secondary;
     overflow: hidden;
     cursor: pointer;
-
+ margin-bottom: 1rem;
     img {
         width: 100%;
     }
@@ -85,8 +96,9 @@
             top: 0;
             opacity: 0.9;
         }
-        .projects__btn{
-            opacity:1
+
+        .projects__btn {
+            opacity: 1
         }
     }
 
