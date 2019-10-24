@@ -194,10 +194,10 @@
 }
 
 .about__bio-image {
-  height: 50vh;
+  height: 60vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.2))), url("/shoot/DSC_0231.jpg");
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/shoot/DSC_0231.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.2))), url("/shoot/biology.jpeg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/shoot/biology.jpeg");
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,8 +286,8 @@
 .projects__bio-image {
   height: 45vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.2))), url("/shoot/DSC_0231.jpg");
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/shoot/DSC_0231.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.2))), url("/shoot/backie.jpeg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/shoot/backie.jpeg");
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,11 +328,19 @@
   z-index: 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+}
+
+.projects__btns p {
+  position: absolute;
+  top: 0.5%;
+  background-color: black;
+  width: 100%;
   text-align: center;
 }
 
@@ -352,6 +360,7 @@
   border-bottom: 5px solid #ff9a01;
   overflow: hidden;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .project__item img {
@@ -421,6 +430,13 @@ footer {
   text-align: left;
 }
 
+.contact h4 {
+  margin: 1rem;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
 .contact__val {
   display: -ms-grid;
   display: grid;
@@ -485,8 +501,8 @@ footer {
   }
   .projects__bio-image {
     height: 73vh;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.2))), url("/shoot/DSC_0324.JPG");
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/shoot/DSC_0324.JPG");
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.2))), url("/shoot/backie.jpeg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/shoot/backie.jpeg");
     background-size: cover;
   }
   .projects__bio-image .text-secondary {
@@ -538,8 +554,8 @@ footer {
 .blogs__blog-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.2))), url("/shoot/DSC_0231.jpg");
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/shoot/DSC_0231.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.2))), url("/shoot/art.jpeg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/shoot/art.jpeg");
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
