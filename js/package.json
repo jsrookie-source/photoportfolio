@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My simple Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dedanmsafari/Portfolio.git"
+  },
+  "author": "Dedan Msafari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dedanmsafari/Portfolio/issues"
+  },
+  "homepage": "https://github.com/dedanmsafari/Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
