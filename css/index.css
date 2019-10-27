@@ -189,6 +189,16 @@
           transition-delay: 0.55s;
 }
 
+.menu-nav__item:nth-child(5) {
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.menu-nav__item:nth-child(6) {
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
 .about {
   padding-bottom: 2rem;
 }
