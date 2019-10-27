@@ -13,7 +13,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/css/index.css" />
-    <title>Amazing!!</title>
+    <link rel="shortcut icon" href="/shoot/favicon.ico" />
+    <title>Newsletter Signup</title>
   </head>
   <body>
       <header>
@@ -44,14 +45,46 @@
           </nav>
         </header>
     <div class="container">
-      <section class="row mt-5 text-center">
-        <div class="col-md-6 m-auto">
-          <h1><i class="fas fa-thumbs-up fa-2x"></i></h1>
-          <h1 class="display-4">Success!</h1>
-          <p class="lead">
-            Wow! Congratulations! you've just signed up for my monthly newsletter
-          </p>
-          <!-- <a href="/public/index.html" class="btn btn-secondary">Back</a> -->
+      <section class="col mt-5 text-center ">
+        <div class="col-md-5 m-auto">
+          <h1>
+            <i class="fas fa-newspaper fa-2x"></i>
+          </h1>
+          <h1 class="display-4">Newsletter Signup</h1>
+          <p class="lead">Enter your details to sign up to my great stories</p>
+
+          <form action="/signup" method="POST">
+            <div class="form-group">
+              <input
+                type="text"
+                name="firstName"
+                id="first-name"
+                class="form-control"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="lastName"
+                id="last-name"
+                class="form-control"
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Email"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Sign Up
+            </button>
+          </form>
         </div>
       </section>
     </div>
